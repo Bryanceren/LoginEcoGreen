@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".LoginActivity"
+                android:id="@+id/login"
+>
+
+
+
+    <VideoView
+            android:id="@+id/videoview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
+
+    />
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:background="#99000000"
+            android:gravity="center"
+
+    >
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="EcoGreen"
+                  android:textSize="30dp"
+                  android:textAlignment="center"
+                  android:textColor="#fff"
+                  android:layout_margin="20dp"
+                  android:fontFamily="sans-serif-thin"
+
+        />
+        
+        <EditText
+                android:id="@+id/email_activity_login"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textColorHint="#80ffffff"
+                android:hint="Email"
+                />
+        <EditText
+                android:id="@+id/password_activity_login"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textColorHint="#80ffffff"
+                android:hint="Password"
+                android:password="true"
+        />
+        
+        <Button
+                android:id="@+id/login_activity_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:layout_marginBottom="20dp"
+                android:background="#66ffffff"
+        />
+    <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/register_activity_login"
+              android:gravity="center"
+              android:text="Not a member? Register"
+              android:textColor="@color/colorPrimary"
+              android:textSize="16dp"
+              android:layout_marginBottom="20dp"
+    />
+    </LinearLayout>
+
+</RelativeLayout>
